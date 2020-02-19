@@ -1,61 +1,70 @@
 package exersices
 
 import akka.actor.{Actor, ActorRef, ActorSystem, Props}
-import exersices.VotingSystem.Citizen.{Vote, VoteStatusReply}
-import exersices.VotingSystem.VotesAgregator.AgregateVotes
+import exersices.VotingSystem.Aggregator.AggregateVotes
+import exersices.VotingSystem.Citizen.Vote
 
 object VotingSystem extends App {
 
-  object Citizen{
-    case class Vote(candidate:String)
+  object Citizen {
+    case class Vote(candidate: String)
     case object VoteStatusRequest
     case class VoteStatusReply(candidate: Option[String])
   }
-class Citizen extends Actor{
-  import Citizen._
-  var candidate :Option[String]= None
-  override def receive: Receive = {
-    case Vote(c)=> candidate=Some(c)
-    case VoteStatusRequest=> sender() ! VoteStatusReply(candidate)
-  }
-}
 
-  object VotesAgregator{
-    case class AgregateVotes(citizens:Set[ActorRef])
-  }
-  class VotesAgregator extends Actor{
+  class Citizen extends Actor {
     import Citizen._
-    var stillWaiting : Set[ActorRef]= Set()
-    var currentStats: Map[String,Int]= Map()
-    override def receive: Receive = {
-      case AgregateVotes(citizens)=>
-        stillWaiting = citizens
-        citizens.foreach(citizenRef => citizenRef ! VoteStatusRequest)
-      // a citizen hasn't vote yet
-      case VoteStatusReply(None)=> sender() ! VoteStatusRequest
-      case VoteStatusReply(Some(candidate))=>
-        val newStillWaiting = stillWaiting - sender()
-        val currentVotesOfCandidate: Int = currentStats.getOrElse(candidate,0)
-        currentStats = currentStats + (candidate-> (currentVotesOfCandidate+1))
 
-        if(newStillWaiting.isEmpty){
-          println(s"[vote agregator] current stats : $currentStats")
-        } else stillWaiting = newStillWaiting
-      }
+    override def receive: Receive = {
+      case Vote(candidate) => context.become(voted(candidate))
+      case VoteStatusRequest => sender() ! VoteStatusReply(None)
+    }
+    def voted(candidate: String): Receive = {
+      case VoteStatusRequest => sender() ! VoteStatusReply(Some(candidate))
+    }
+  }
+
+  object Aggregator {
+    case class AggregateVotes(citizens: Set[ActorRef])
+  }
+
+  class Aggregator extends Actor {
+
+    import Citizen._
+
+    override def receive: Receive = {
+
+      case AggregateVotes(citizens) =>
+        citizens.map(citizenRef => citizenRef ! VoteStatusRequest)
+        context.become(awaitingStatuses(citizens, Map()))
     }
 
-  val system = ActorSystem("VotingSystem")
+    def awaitingStatuses(stillWaiting: Set[ActorRef], currentStats: Map[String, Int]): Receive = {
+      case VoteStatusReply(None) => sender() ! VoteStatusRequest
+      case VoteStatusReply(Some(candidate)) =>
+        val newStillWaiting = stillWaiting - sender()
+        val currentVotesOfCandidate = currentStats.getOrElse(candidate, 0)
+        val newStats = currentStats + (candidate -> (currentVotesOfCandidate + 1))
+        if (newStillWaiting.isEmpty) {
+          println(s"[agregator] current stats : $newStats")
+        } else {
+          context.become(awaitingStatuses(newStillWaiting, newStats))
+        }
+    }
+  }
 
-  val alis = system.actorOf(Props[Citizen])
-  val bob = system.actorOf(Props[Citizen])
-  val daniel = system.actorOf(Props[Citizen])
-  val jim = system.actorOf(Props[Citizen])
+    val system = ActorSystem("VotingSystem")
 
-  alis ! Vote("Martin")
-  bob ! Vote("Jonas")
-  daniel ! Vote("Roland")
-  jim ! Vote ("Roland")
+    val alis = system.actorOf(Props[Citizen])
+    val bob = system.actorOf(Props[Citizen])
+    val daniel = system.actorOf(Props[Citizen])
+    val jim = system.actorOf(Props[Citizen])
 
-  val agregator = system.actorOf(Props[VotesAgregator])
-  agregator ! AgregateVotes(Set(alis,bob,daniel,jim))
+    alis ! Vote("Martin")
+    bob ! Vote("Jonas")
+    daniel ! Vote("Roland")
+    jim ! Vote("Roland")
+
+    val agregator: ActorRef = system.actorOf(Props[Aggregator])
+    agregator ! AggregateVotes(Set(alis, bob, daniel, jim))
 }
