@@ -6,8 +6,8 @@ object ChildActorExersice extends App {
 
   object WordCounterMaster{
     case class Initialize(nChildren:Int)
-    case class WordCountTask(tackId:Int, text:String)
-    case class WordCountReply(id:Int, counter:Int)
+    case class WordCountTask(taskId:Int, text:String)
+    case class WordCountReply(taskId:Int, counter:Int)
   }
   class WordCounterMaster extends Actor{
     import WordCounterMaster._
