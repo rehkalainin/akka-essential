@@ -10,7 +10,6 @@ object IntroAkkaConfig extends App {
       case message => log.info(message.toString)
     }
   }
-
   /**
    * 1 - inline configuration inside current file
    */
