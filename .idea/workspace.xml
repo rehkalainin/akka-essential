@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1929856d-4ef9-4e57-9344-f1a43c75ea51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/json/jsonConfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/secretFolder/secretConfiguration.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/actors/IntroAkkaConfig.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/actors/dummyConfig.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/akka-essential.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/akka-essential.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/props/propsConfig.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/actors/IntroAkkaConfig.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/actors/IntroAkkaConfig.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -203,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582128247869</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="akka config intro">
+      <created>1582189122485</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1582189122486</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -226,6 +229,7 @@
     <MESSAGE value="Voting system" />
     <MESSAGE value="distributed actor work" />
     <MESSAGE value="ActorLogging" />
-    <option name="LAST_COMMIT_MESSAGE" value="ActorLogging" />
+    <MESSAGE value="akka config intro" />
+    <option name="LAST_COMMIT_MESSAGE" value="akka config intro" />
   </component>
 </project>

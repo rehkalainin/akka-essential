@@ -54,10 +54,13 @@ val configString =
 
   /**
    * 5 - different format file
-   *    JSON format
+   *    JSON, Properties
    */
   val jsonConfig = ConfigFactory.load("json/jsonConfig.json")
   println(s"json config: ${jsonConfig.getString("aJsonProperties")}")
   println(s"json config: ${jsonConfig.getString("akka.loglevel")}")
 
+  val propsConfig = ConfigFactory.load("props/propsConfig.properties")
+  println(s"props config: ${propsConfig.getString("my.sympleProperty")}")
+  println(s"props config: ${propsConfig.getString("akka.loglevel")}")
 }
