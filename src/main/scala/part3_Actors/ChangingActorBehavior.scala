@@ -1,6 +1,6 @@
-package actors
+package part3_Actors
 
-import actors.ChangingActorBehavior.Mom.{Food, MomStart}
+import part3_Actors.ChangingActorBehavior.Mom.{Food, MomStart}
 import akka.actor.{Actor, ActorRef, ActorSystem, Props}
 
 object ChangingActorBehavior extends App {

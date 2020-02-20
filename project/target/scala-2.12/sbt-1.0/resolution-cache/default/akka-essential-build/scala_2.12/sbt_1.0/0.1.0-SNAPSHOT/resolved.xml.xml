@@ -4,7 +4,7 @@
 		module="akka-essential-build"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20200217110851"
+		publication="20200220145716"
 		e:sbtVersion="1.0" e:scalaVersion="2.12"
 	>
 		<description>

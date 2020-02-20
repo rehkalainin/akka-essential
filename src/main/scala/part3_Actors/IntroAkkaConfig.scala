@@ -1,4 +1,4 @@
-package actors
+package part3_Actors
 
 import akka.actor.{Actor, ActorLogging, ActorSystem, Props}
 import com.typesafe.config.{Config, ConfigFactory}
