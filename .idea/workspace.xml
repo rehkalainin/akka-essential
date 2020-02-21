@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1929856d-4ef9-4e57-9344-f1a43c75ea51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/part4_Testing/TestProbesSpec.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/part5_Infrastructure/BasicSchedulers.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/part5_Infrastructure/BasicTimers.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/part4_Testing/TestProbesSpec.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/part4_Testing/TestProbesSpec.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +48,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="ScalaTest.TestProbesSpec">
+  <component name="RunManager" selected="Application.BasicTimers">
+    <configuration name="BasicTimers" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="part5_Infrastructure.BasicTimers" />
+      <module name="akka-essential" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="part5_Infrastructure.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TimerSchedulers" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="part5_Infrastructure.BasicSchedulers" />
+      <module name="akka-essential" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="part5_Infrastructure.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BasicSpec" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="akka-essential" />
       <option name="allowRunningInParallel" value="false" />
@@ -88,48 +116,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BasicSpec.A SimpleActor should send back the same message" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
-      <module name="akka-essential" />
-      <option name="allowRunningInParallel" value="false" />
-      <option name="testKind" value="Class" />
-      <option name="envs">
-        <map />
-      </option>
-      <option name="javaOptions" value="" />
-      <option name="jrePath" />
-      <option name="searchTest" value="Across module dependencies" />
-      <option name="showProgressMessages" value="true" />
-      <option name="testArgs" value="" />
-      <option name="testClassPath" value="part4_Testing.BasicSpec" />
-      <option name="testName" value="A SimpleActor should send back the same message" />
-      <option name="useSbt" value="false" />
-      <option name="useUiWithSbt" value="false" />
-      <option name="workingDirectory" value="C:\Andersen\Lab\AkkaEssential\akka-essential" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BasicSpec.A SimpleActor should to do another" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
-      <module name="akka-essential" />
-      <option name="allowRunningInParallel" value="false" />
-      <option name="testKind" value="Class" />
-      <option name="envs">
-        <map />
-      </option>
-      <option name="javaOptions" value="" />
-      <option name="jrePath" />
-      <option name="searchTest" value="Across module dependencies" />
-      <option name="showProgressMessages" value="true" />
-      <option name="testArgs" value="" />
-      <option name="testClassPath" value="part4_Testing.BasicSpec" />
-      <option name="testName" value="A SimpleActor should to do another" />
-      <option name="useSbt" value="false" />
-      <option name="useUiWithSbt" value="false" />
-      <option name="workingDirectory" value="C:\Andersen\Lab\AkkaEssential\akka-essential" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestProbesSpec" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="akka-essential" />
       <option name="allowRunningInParallel" value="false" />
@@ -152,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BasicTimers" />
+        <item itemvalue="Application.TimerSchedulers" />
         <item itemvalue="ScalaTest.TestProbesSpec" />
         <item itemvalue="ScalaTest.BasicSpec" />
         <item itemvalue="ScalaTest.BasicSpec.A SimpleActor should Blackhole actor should send back the same message" />
-        <item itemvalue="ScalaTest.BasicSpec.A SimpleActor should send back the same message" />
-        <item itemvalue="ScalaTest.BasicSpec.A SimpleActor should to do another" />
       </list>
     </recent_temporary>
   </component>
@@ -264,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582208268068</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="akka TestProbes">
+      <created>1582271032689</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1582271032690</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -291,6 +284,7 @@
     <MESSAGE value="akka config intro + props" />
     <MESSAGE value="akka config intro - dummy" />
     <MESSAGE value="akka TestKit" />
-    <option name="LAST_COMMIT_MESSAGE" value="akka TestKit" />
+    <MESSAGE value="akka TestProbes" />
+    <option name="LAST_COMMIT_MESSAGE" value="akka TestProbes" />
   </component>
 </project>

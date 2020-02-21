@@ -30,6 +30,7 @@ class TestProbesSpec extends TestKit(ActorSystem("TestProbesSpecSystem"))
 
     val text = "I love akka"
     master ! Work(text)
+
     // the interaction between master actor and slave actor
     slave.expectMsg(SlaveWork(text, testActor)) // testActor - original requester
     slave.reply(WorkCompleted(3, testActor))
