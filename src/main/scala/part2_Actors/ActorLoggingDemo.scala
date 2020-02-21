@@ -1,4 +1,4 @@
-package part3_Actors
+package part2_Actors
 
 import akka.actor.{Actor, ActorLogging, ActorSystem, Props}
 import akka.event.Logging

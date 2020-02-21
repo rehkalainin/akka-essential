@@ -1,6 +1,6 @@
-package part3_Actors
+package part2_Actors
 
-import part3_Actors.ChildActors.Parent.{CreateActor, TellChild}
+import part2_Actors.ChildActors.Parent.{CreateActor, TellChild}
 import akka.actor.{Actor, ActorRef, ActorSystem, Props}
 
 object ChildActors extends App{

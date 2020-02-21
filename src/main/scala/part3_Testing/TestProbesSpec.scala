@@ -1,9 +1,9 @@
-package part4_Testing
+package part3_Testing
 
 import akka.actor.{Actor, ActorRef, ActorSystem, Props}
 import akka.testkit.{ImplicitSender, TestKit, TestProbe}
 import org.scalatest.{BeforeAndAfterAll, WordSpecLike}
-import part4_Testing.TestProbesSpec.{Master, Register, RegistrationAct, Report, SlaveWork, Work, WorkCompleted}
+import part3_Testing.TestProbesSpec.{Master, Register, RegistrationAct, Report, SlaveWork, Work, WorkCompleted}
 
 class TestProbesSpec extends TestKit(ActorSystem("TestProbesSpecSystem"))
   with ImplicitSender
