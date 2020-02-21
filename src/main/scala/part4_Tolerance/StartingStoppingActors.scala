@@ -1,6 +1,6 @@
 package part4_Tolerance
 
-import akka.actor.{Actor, ActorLogging, ActorRef, ActorSystem, Kill, PoisonPill, Props}
+import akka.actor.{Actor, ActorLogging, ActorRef, ActorSystem, Kill, PoisonPill, Props, Terminated}
 import part4_Tolerance.StartingStoppingActors.Parent.{StartChild, Stop, StopChild}
 
 object StartingStoppingActors extends App{
@@ -64,6 +64,26 @@ object StartingStoppingActors extends App{
 
   val abruptlyTerminated = system.actorOf(Props[Child])
   abruptlyTerminated ! "hello, abruptlyTerminated"
-  abruptlyTerminated ! Kill // убивает актор и в логах кидает ERROR (спец команда)
+  abruptlyTerminated ! Kill // actor throw ActorKillExeption логах кидает ERROR (спец команда)
   abruptlyTerminated ! " abruptlyTerminated are you alive?"
+
+  /**
+   *  3 - Dead watch
+   */
+
+  class Watcher extends Actor with ActorLogging {
+    override def receive: Receive = {
+      case StartChild(name)=>
+        log.info(s"Started watch child $name ")
+        val child = context.actorOf(Props[Child],name)
+        context.watch(child)
+      case Terminated(ref)=>
+        log.info(s" reference that I'm watching $ref has been stoped")
+    }
+  }
+val watcher = system.actorOf(Props[Watcher], "watcher")
+  watcher ! StartChild("watchedChild")
+  val watchedChild = system.actorSelection("user/watcher/watchedChild")
+  Thread.sleep(1000)
+  watchedChild ! PoisonPill
 }

@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1929856d-4ef9-4e57-9344-f1a43c75ea51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/part4_Tolerance/StartingStoppingActors.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/part3_Actors/ActorCapability.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/part2_Actors/ActorCapability.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/part3_Actors/ActorIntro.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/part2_Actors/ActorIntro.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/part3_Actors/ActorLoggingDemo.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/part2_Actors/ActorLoggingDemo.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/part3_Actors/ChangingActorBehavior.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/part2_Actors/ChangingActorBehavior.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/part3_Actors/ChildActors$.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/part2_Actors/ChildActors$.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/part3_Actors/IntroAkkaConfig.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/part2_Actors/IntroAkkaConfig.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/part4_Testing/BasicSpec.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/part3_Testing/BasicSpec.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/part4_Testing/TestProbesSpec.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/part3_Testing/TestProbesSpec.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/part4_Tolerance/StartingStoppingActors.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/part4_Tolerance/StartingStoppingActors.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -269,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582277908566</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="start and spot actors, special message">
+      <created>1582282741050</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1582282741050</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -299,6 +298,7 @@
     <MESSAGE value="akka TestProbes" />
     <MESSAGE value="akka BasicTimers" />
     <MESSAGE value="akka BasicTimers + schedule" />
-    <option name="LAST_COMMIT_MESSAGE" value="akka BasicTimers + schedule" />
+    <MESSAGE value="start and spot actors, special message" />
+    <option name="LAST_COMMIT_MESSAGE" value="start and spot actors, special message" />
   </component>
 </project>
