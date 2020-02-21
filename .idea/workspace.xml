@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1929856d-4ef9-4e57-9344-f1a43c75ea51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/part5_Infrastructure/BasicSchedulers.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/part5_Infrastructure/BasicTimers.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/part4_Testing/TestProbesSpec.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/part4_Testing/TestProbesSpec.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/part5_Infrastructure/BasicTimers.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/part5_Infrastructure/BasicTimers.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -257,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582271032690</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="akka BasicTimers">
+      <created>1582276479202</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1582276479202</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -285,6 +290,7 @@
     <MESSAGE value="akka config intro - dummy" />
     <MESSAGE value="akka TestKit" />
     <MESSAGE value="akka TestProbes" />
-    <option name="LAST_COMMIT_MESSAGE" value="akka TestProbes" />
+    <MESSAGE value="akka BasicTimers" />
+    <option name="LAST_COMMIT_MESSAGE" value="akka BasicTimers" />
   </component>
 </project>
