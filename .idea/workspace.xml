@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1929856d-4ef9-4e57-9344-f1a43c75ea51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/part5_Infrastructure/RoutersGroup.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/part5_Infrastructure/RoutersManual.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/part5_Infrastructure/RoutersPool.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/part5_Infrastructure/Dispatchers.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.conf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,9 +48,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RoutersGroup">
-    <configuration name="BasicTimers" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="part5_Infrastructure.BasicTimers" />
+  <component name="RunManager" selected="Application.Dispatchers">
+    <configuration name="Dispatchers" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="part5_Infrastructure.Dispatchers" />
       <module name="akka-essential" />
       <extension name="coverage">
         <pattern>
@@ -117,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Dispatchers" />
         <item itemvalue="Application.RoutersGroup" />
         <item itemvalue="Application.RoutersPool" />
         <item itemvalue="Application.Routers" />
         <item itemvalue="Application.StartingStoppingActors" />
-        <item itemvalue="Application.BasicTimers" />
       </list>
     </recent_temporary>
   </component>
@@ -264,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582295126288</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="actors Routers (manual, pool, grouped)">
+      <created>1582558096489</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1582558096489</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -296,6 +302,7 @@
     <MESSAGE value="akka BasicTimers + schedule" />
     <MESSAGE value="start and spot actors, special message" />
     <MESSAGE value="start and spot actors, special message1" />
-    <option name="LAST_COMMIT_MESSAGE" value="start and spot actors, special message1" />
+    <MESSAGE value="actors Routers (manual, pool, grouped)" />
+    <option name="LAST_COMMIT_MESSAGE" value="actors Routers (manual, pool, grouped)" />
   </component>
 </project>
