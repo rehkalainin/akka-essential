@@ -11,7 +11,7 @@ import scala.concurrent.{ExecutionContextExecutor, Future}
 import scala.concurrent.duration._
 import scala.util.{Failure, Success}
 // step 1 - import akka ask pattern
-import akka.pattern.ask  // We use ask when we expect single response
+import akka.pattern.ask // We use ask when we expect single response
 import akka.pattern.pipe
 
 class AskSpec extends TestKit(ActorSystem("AskSpec"))

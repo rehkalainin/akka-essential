@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1929856d-4ef9-4e57-9344-f1a43c75ea51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/part6_Patterns/AskSpec.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/part6_Patterns/StashDemo.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/part6_Patterns/AskSpec.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/part6_Patterns/AskSpec.scala" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +28,11 @@
   </component>
   <component name="ProjectId" id="1XvdRso3iXQ3w4So32qQxrk2IkL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Problems" />
@@ -35,71 +40,7 @@
     <property name="project.structure.side.proportion" value="0.27586207" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="ScalaTest.AskSpec">
-    <configuration name="Dispatchers" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="part5_Infrastructure.Dispatchers" />
-      <module name="akka-essential" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="part5_Infrastructure.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MailBoxes" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="part5_Infrastructure.MailBoxes" />
-      <module name="akka-essential" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="part5_Infrastructure.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RoutersGroup" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="part5_Infrastructure.RoutersGroup" />
-      <module name="akka-essential" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="part5_Infrastructure.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StashDemo" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="part6_Patterns.StashDemo" />
-      <module name="akka-essential" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="part6_Patterns.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="ScalaTest.FSMSpec">
     <configuration name="AskSpec" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="akka-essential" />
       <option name="allowRunningInParallel" value="false" />
@@ -120,13 +61,96 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FSMSpec" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="akka-essential" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="part6_Patterns.FSMSpec" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="C:\Andersen\Lab\AkkaEssential\akka-essential" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FSMSpec.A Vending machin should error when not initialized" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="akka-essential" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="part6_Patterns.FSMSpec" />
+      <option name="testName" value="A Vending machin should error when not initialized" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="C:\Andersen\Lab\AkkaEssential\akka-essential" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FSMSpec.A Vending machin should error when not initialized&#10;A Vending machin should report a product a not available" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="akka-essential" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="part6_Patterns.FSMSpec" />
+      <option name="testName" value="A Vending machin should error when not initialized&#10;A Vending machin should report a product a not available" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="C:\Andersen\Lab\AkkaEssential\akka-essential" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FSMSpec.A Vending machin should throw a timeout if I dont insert money" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="akka-essential" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="part6_Patterns.FSMSpec" />
+      <option name="testName" value="A Vending machin should throw a timeout if I dont insert money" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="C:\Andersen\Lab\AkkaEssential\akka-essential" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="ScalaTest.FSMSpec" />
+        <item itemvalue="ScalaTest.FSMSpec.A Vending machin should throw a timeout if I dont insert money" />
+        <item itemvalue="ScalaTest.FSMSpec.A Vending machin should error when not initialized&#10;A Vending machin should report a product a not available" />
+        <item itemvalue="ScalaTest.FSMSpec.A Vending machin should error when not initialized" />
         <item itemvalue="ScalaTest.AskSpec" />
-        <item itemvalue="Application.StashDemo" />
-        <item itemvalue="Application.MailBoxes" />
-        <item itemvalue="Application.Dispatchers" />
-        <item itemvalue="Application.RoutersGroup" />
       </list>
     </recent_temporary>
   </component>
@@ -157,7 +181,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="3163861280706" />
+        <entry key="$PROJECT_DIR$" value="3164726028935" />
         <entry key="$PROJECT_DIR$/build.sbt" value="2919321485" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="1396028727" />
       </map>
@@ -290,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582630658299</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="actor pattern ask and pipeTo">
+      <created>1582704405800</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1582704405800</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -325,6 +356,45 @@
     <MESSAGE value="actors Routers (manual, pool, grouped)" />
     <MESSAGE value="actor Dispatcher" />
     <MESSAGE value="actor mailboxes" />
-    <option name="LAST_COMMIT_MESSAGE" value="actor mailboxes" />
+    <MESSAGE value="actor pattern ask and pipeTo" />
+    <option name="LAST_COMMIT_MESSAGE" value="actor pattern ask and pipeTo" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="74" key="#Notifications" timestamp="1582886966171">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="74" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1582886966171" />
+    <state x="574" y="110" key="#com.intellij.ide.util.MemberChooser" timestamp="1584028387795">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="110" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1584028387795" />
+    <state x="620" y="304" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1584024365611">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="620" y="304" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1584024365611" />
+    <state width="1493" height="282" key="GridCell.Tab.0.bottom" timestamp="1584044827710">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="282" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584044827710" />
+    <state width="1493" height="282" key="GridCell.Tab.0.center" timestamp="1584044827710">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="282" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1584044827710" />
+    <state width="1493" height="282" key="GridCell.Tab.0.left" timestamp="1584044827709">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="282" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1584044827709" />
+    <state width="1493" height="282" key="GridCell.Tab.0.right" timestamp="1584044827710">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="282" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1584044827710" />
+    <state x="477" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1582886947489">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="477" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1582886947489" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1582878468195">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1582878468195" />
   </component>
 </project>
